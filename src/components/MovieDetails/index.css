@@ -1,0 +1,151 @@
+.specific-movie-details-background-container {
+  min-height: 100vh;
+  background-color: #000000;
+}
+.specific-movie-details-top-section {
+  background-size: cover;
+}
+
+.specific-movie-details-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 8px 30px;
+}
+.specific-movie-title {
+  font-family: 'Roboto';
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.specific-movie-censor-runtime-container {
+  display: flex;
+  align-items: center;
+}
+.specific-movie-fullYear {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.specific-movie-censor-status {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+.specific-movie-runtime-status {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.specific-movie-overview {
+  font-family: 'HR Grotesk';
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.play-button {
+  padding: 12px 24px;
+  background-color: #ffffff;
+  color: #171f46;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 10px;
+  width: 80px;
+  border: none;
+  outline: none;
+}
+.specific-movie-details-2-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-bottom: 10px;
+}
+.genres-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 35px;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+.genre-heading {
+  font-family: 'HR Grotesk';
+  font-size: 16px;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+.genre-item {
+  font-family: 'HR Grotesk';
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.loading-container-background {
+  min-height: 100vh;
+  background-color: #000000;
+}
+.loader-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.more-likes-heading {
+  font-family: 'HR Grotesk';
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-left: 30px;
+}
+.failure-movie-page-background {
+  background-image: url('https://res.cloudinary.com/dyhda963d/image/upload/v1626239053/snow-removal-machine-working-high-ski-slope-snowstorm_454047-2149_1_pus6op.png');
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failure-page-heading {
+  font-family: 'HR Grotesk';
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.failure-page-description {
+  font-family: 'HR Grotesk';
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+.failure-page-button {
+  background-color: #ffffff;
+  color: #171f46;
+  font-family: 'HR Grotesk';
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  margin: 0px 30px;
+  border: none;
+  outline: none;
+}
+.failure-page-message {
+  font-family: 'HR Grotesk';
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}

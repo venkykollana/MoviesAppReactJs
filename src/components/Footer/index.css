@@ -1,0 +1,17 @@
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+.icon {
+  color: #ffffff;
+  height: 20px;
+  width: 20px;
+  margin-right: 30px;
+}
+.contact {
+  font-family: 'HK Grotesk';
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+}

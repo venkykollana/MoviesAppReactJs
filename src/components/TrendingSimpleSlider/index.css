@@ -1,0 +1,44 @@
+.react-slick-item {
+  background: transparent;
+}
+
+.slick-app-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.poster {
+  height: 100px;
+  width: 80px;
+  border-radius: 10px;
+}
+.slides {
+  max-height: 150px;
+  max-width: 100%;
+}
+.trending-name {
+  font-family: 'HK Grotesk';
+  font-size: 20px;
+  color: #ffffff;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .poster {
+    height: 140px;
+    width: 110px;
+    border-radius: 15px;
+  }
+  .slides {
+    max-height: 200px;
+    max-width: 95%;
+  }
+  .trending-name {
+    font-size: 32px;
+  }
+}

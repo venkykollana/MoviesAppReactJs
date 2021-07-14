@@ -1,0 +1,83 @@
+.account-page-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 12px 24px;
+}
+.account-heading {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 500;
+  color: #131313;
+}
+.separator {
+  background-color: #cbd5e1;
+  border-radius: 8px;
+  margin: 15px 0px;
+}
+.text-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+.membership {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  color: #94a3e8;
+  margin-right: 10px;
+}
+.email {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  color: #1e293b;
+  margin-right: 10px;
+}
+.password {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  color: #1e293b;
+}
+.ultra {
+  color: #1e293b;
+  border: 1px solid #1e293b;
+  height: 30px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.logout-button {
+  background-color: #e50914;
+  padding: 12px 24px;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .account-page-container {
+    padding: 15px 100px;
+    margin: auto;
+  }
+  .membership {
+    font-size: 25px;
+  }
+  .account-heading {
+    font-size: 36px;
+  }
+  .email {
+    font-size: 20px;
+  }
+  .ultra {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,62 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popular-page-background-container {
+  min-height: 100vh;
+  background-color: #131313;
+}
+.popular-movies-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 30px;
+  width: 100%;
+}
+
+.page-number-container {
+  display: flex;
+  justify-content: center;
+  background-color: #131313;
+}
+.page-number-left-icon {
+  height: 24px;
+  width: 24px;
+  border: 1px solid #ffffff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: #ffffff;
+  background-color: transparent;
+  margin-right: 20px;
+  outline: none;
+}
+
+.page-number-right-icon {
+  height: 24px;
+  width: 24px;
+  border: 1px solid #ffffff;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #ffffff;
+  background-color: transparent;
+  outline: none;
+}
+.page-number-text {
+  font-family: 'Bree Serif';
+  font-size: 16px;
+  color: #cbd5e1;
+  margin-right: 20px;
+}
+.footer-container {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .popular-movies-card-container {
+    padding: 0px 32px;
+  }
+}

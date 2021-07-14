@@ -1,0 +1,6 @@
+.similar-movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 30px;
+  max-width: 90%;
+}

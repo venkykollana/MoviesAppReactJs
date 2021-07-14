@@ -1,0 +1,43 @@
+.not-found-container {
+  background-color: #131313;
+  min-height: 100vh;
+}
+.failure-movie-page-background {
+  background-image: url('https://res.cloudinary.com/dyhda963d/image/upload/v1626239053/snow-removal-machine-working-high-ski-slope-snowstorm_454047-2149_1_pus6op.png');
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.failure-page-heading {
+  font-family: 'HR Grotesk';
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.failure-page-description {
+  font-family: 'HR Grotesk';
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+.failure-page-button {
+  background-color: #ffffff;
+  color: #171f46;
+  font-family: 'HR Grotesk';
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 12px 24px;
+  margin: 0px 30px;
+  border: none;
+  outline: none;
+}
+.failure-page-message {
+  font-family: 'HR Grotesk';
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
