@@ -5,10 +5,10 @@ import Login from './components/Login'
 import Home from './components/Home'
 import ProtectedRoute from './components/ProtectedRoute'
 import MovieDetails from './components/MovieDetails'
-import HomeSearch from './components/HomeSearch'
 import Popular from './components/Popular'
 import NotFound from './components/NotFound'
 import Account from './components/Account'
+import HomeSearch from './components/HomeSearch'
 
 const App = () => (
   <BrowserRouter>

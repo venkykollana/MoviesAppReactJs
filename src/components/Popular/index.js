@@ -8,16 +8,16 @@ import Footer from '../Footer'
 import MovieCard from '../MovieCard'
 
 class Popular extends Component {
-  state = {pageNo: 1, popularMovieList: {}, isLoading: true, searchInput: ''}
+  state = {pageNo: 1, popularMovieList: {}, isLoading: true}
 
   componentDidMount() {
     this.getPopularMovies()
   }
 
   getPopularMovies = async () => {
-    const {pageNo, searchInput} = this.state
+    const {pageNo} = this.state
     this.setState({isLoading: true})
-    const url = `https://api.themoviedb.org/3/movie/popular?api_key=12bc7a61a4e0b573539da286534a13a1&language=en-US&page=${pageNo}&query=${searchInput}`
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=12bc7a61a4e0b573539da286534a13a1&language=en-US&page=${pageNo}`
     const response = await fetch(url)
     const data = await response.json()
     const formattedData = {
@@ -68,10 +68,6 @@ class Popular extends Component {
     }
   }
 
-  onChangeSearchInput = value => {
-    this.setState({searchInput: value}, this.getPopularMovies)
-  }
-
   renderPopularMoviesSection = () => {
     const {popularMovieList, pageNo} = this.state
     const {totalPages} = popularMovieList
@@ -110,7 +106,7 @@ class Popular extends Component {
     const {isLoading} = this.state
     return (
       <div className="popular-page-background-container">
-        <Header onChangeSearchInput={this.onChangeSearchInput} />
+        <Header />
         {isLoading ? this.renderLoader() : this.renderPopularMoviesSection()}
       </div>
     )

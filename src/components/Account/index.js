@@ -18,7 +18,7 @@ const Account = props => {
         <div className="text-container">
           <h1 className="membership">Membership</h1>
           <div>
-            <p className="email">Email Address</p>
+            <p className="email">venkykollana@gmail.com</p>
             <p className="password">Password: ********</p>
           </div>
         </div>

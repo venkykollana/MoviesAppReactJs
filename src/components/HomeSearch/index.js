@@ -7,6 +7,7 @@ import Header from '../Header'
 import MovieCard from '../MovieCard'
 
 const apiSearchStatus = {
+  initial: 'INITIAL',
   success: 'SUCCESS',
   failure: 'FAILURE',
   inProgress: 'INPROGRESS',
@@ -14,10 +15,10 @@ const apiSearchStatus = {
 
 class HomeSearch extends Component {
   state = {
-    searchInput: 'h',
+    searchInput: '',
     pageNo: 1,
     searchMoviesList: {},
-    searchStatus: apiSearchStatus.inprogress,
+    searchStatus: apiSearchStatus.initial,
   }
 
   componentDidMount() {
@@ -52,10 +53,10 @@ class HomeSearch extends Component {
 
     const url = `https://api.themoviedb.org/3/search/movie?api_key=12bc7a61a4e0b573539da286534a13a1&language=en-US&query=${searchInput}&page=${pageNo}`
     const response = await fetch(url)
-    //  console.log(response)
+    console.log(response)
     const data = await response.json()
-    //  console.log(data)
-    if (data.total_pages !== 0) {
+    console.log(data)
+    if (data.total_pages !== 0 && response.ok === true) {
       const formattedSearchList = {
         page: data.page,
         totalPages: data.total_pages,
@@ -81,8 +82,10 @@ class HomeSearch extends Component {
         searchMoviesList: formattedSearchList,
         searchStatus: apiSearchStatus.success,
       })
-    } else {
+    } else if (data.total_pages === 0 && response.ok === true) {
       this.setState({searchStatus: apiSearchStatus.failure})
+    } else {
+      this.setState({searchStatus: apiSearchStatus.initial})
     }
   }
 
@@ -138,7 +141,13 @@ class HomeSearch extends Component {
 
   renderLoader = () => (
     <div testid="loader" className="loader-container">
-      <Loader type="ThreeDots" color="#d81f26" height={80} width={80} />
+      <Loader type="Oval" color="#d81f26" height={80} width={80} />
+    </div>
+  )
+
+  renderInitialSearchPage = () => (
+    <div className="initial-search-container">
+      <h1 className="search-message">Search for a movie you want</h1>
     </div>
   )
 
@@ -149,8 +158,10 @@ class HomeSearch extends Component {
         return this.renderSearchMoviesItems()
       case apiSearchStatus.failure:
         return this.getFailureSearchResults()
-      default:
+      case apiSearchStatus.inProgress:
         return this.renderLoader()
+      default:
+        return this.renderInitialSearchPage()
     }
   }
 

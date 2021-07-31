@@ -71,6 +71,9 @@
   display: none;
 }
 
+.active-link-item {
+  font-weight: bold;
+}
 .profile-image {
   display: none;
 }
@@ -101,5 +104,7 @@
     width: 34px;
     margin-left: 15px;
     border-radius: 15px;
+    color: #ffffff;
+    display: inline;
   }
 }

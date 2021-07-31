@@ -66,3 +66,15 @@
   font-size: 16px;
   color: #cbd5e1;
 }
+.initial-search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313;
+  min-height: 100vh;
+}
+.search-message {
+  font-family: 'Bree Serif';
+  font-size: 28px;
+  color: #ffffff;
+}
